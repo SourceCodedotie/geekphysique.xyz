@@ -1,0 +1,38 @@
+/* HOME PAGE */
+
+.topnav {
+    display:inline-flex;
+    align-items: right;
+    justify-content: left;
+    color: #fff; 
+    padding: 00px;
+    
+  }
+
+  .logo img {
+    height: 100px; 
+    width: 500px; 
+  }
+ 
+  
+  .topnav a{
+    float: right;
+    color: #252525;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold; 
+  }
+
+  
+.topnav .logo {
+  display: flex;
+  align-items: center;
+}
+
+.topnav .logo a {
+  max-height: 50px; 
+  display: inline-block;
+}
