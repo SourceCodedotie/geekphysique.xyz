@@ -1,35 +1,106 @@
-<!-- Head/start-->
+<!DOCTYPE html>
+<html lang="en">
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-  
-    <title>Geek Physique</title>
+    <title>Home - Geek Physique</title>
+    
+    <!-- Link to Google Fonts for Roboto and Montserrat fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap Links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <!-- Link to external CSS File -->
+    <link rel="stylesheet"  href="styles.css">
 </head>
-  <!-- Head /end-->
-  
-<body>
-    <!-- IMAGE REFERENCE: All Images were created by me using Canva.com templates -->
-  
-    <!-- Topnav Logo for Geek Physique /start -->
-    <div class="container">
-      <div class="topnav">
-        <div class="logo">
-          <a href="./index.html">
-            <img src="./src/GP-logo.png" alt="geekphysique">
-          </a>
-        </div>
-      <!-- Topnav Logo for Geek Physique / end -->
-  
-  <!-- Main Menu /start -->
-      <a class="active" href="./index.html">Home</a> 
-      <a href="./about.html">About</a>
-      <a href="./classes.html">Classes</a>
-      <a href="./membership.html">Membership</a>
-      <a href="./staff.html">Staff</a>
-      <a href="./gallery.html">Gallery</a>
-      <a href="./minigame.html">Game</a>
-      <a href="./contact.html">Contact</a>
 
- </body>
+<body>
+  <!-- Video Preloader -->
+  <div class="loader-section">
+    <video autoplay muted loop id="loader-video">
+        <source src="./images/images/preloader.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+    <div class="container">
+        <div class="header">
+            <!-- Bootstrap Container, Header Logo -->
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="logo">
+                        <!-- Image Source: canva.com, Paid Professional Subscription -->
+                        <a href="Index.html"><img src="images/images/geek3.png" class="img-fluid" alt="GymImage1"></a>
+                    </div>
+                </div>
+                <!-- Bootstrap Container, Nav Menu -->
+                <div class="col-md-9">
+                    <nav>
+                        <ul>
+                            <!-- Navigation links to Home, Programs, and Sign Up pages -->
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="programs.html">Programs</a></li>
+                            <li><a href="testimonials.html">Testimonials</a></li>
+                            <li><a href="signup.html">Sign Up</a></li>
+                            <li><a href="minigame.html">Play a Game</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap Container TagLine -->
+
+        <!-- Video Section, with link to Sign Up Page -->
+        <div class="video-section">
+          <div class="video-section" onclick="window.location.href='your-link.html';">
+            <video autoplay muted loop>
+                <source src="./images/images/Level Up your fitness.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+    <b></b>
+    <!-- Intro Paragrpah-->
+    <h1> Level Up Your Fitness</h1>
+    <p>Welcome to Geek Physique, where cutting-edge technology meets fitness innovation. At Geek Physique, we leverage the power of data science and artificial intelligence to craft personalized fitness plans tailored to your unique needs. Our commitment goes beyond traditional gym experiences; we believe in a future where technology enhances every aspect of your wellness journey. Our AI-driven approach not only delivers precision in fitness planning but also enables real-time performance monitoring. Geek Physique is more than a gym; it's a hub of innovation, bringing the latest advancements to your workout routine. Join us as we redefine fitness through the fusion of science and sweat, ushering in a new era of wellness at Geek Physique.</p>
+    <!-- Service List -->
+    <div class="container">
+      <div class="service-item">
+          <img src="./images/images/service - nurtition.png" alt="Nutrition" class="service-image">
+          <div class="service-content">
+              <h3>Nutrition</h3>
+              <p>Fuel your body with precision. Our data-driven nutrition guidance considers your unique needs and performance metrics. Receive personalized meal plans and dietary advice, optimizing your nutrition for peak performance and sustainable results.</p>
+          </div>
+      </div>
+  
+      <div class="service-item">
+          <img src="./images/images/service-workout.png" alt="Workout Plans" class="service-image">
+          <div class="service-content">
+              <h3>Workout Plans</h3>
+              <p>Achieve your fitness goals faster with our data-driven workout plans tailored just for you. Our advanced algorithms analyze your performance data, creating personalized routines that adapt to your progress, ensuring you get the most effective and efficient workouts.</p>
+          </div>
+      </div>
+  
+      <div class="service-item">
+          <img src="./images/images/service-track.png" alt="Tracking Progress" class="service-image">
+          <div class="service-content">
+              <h3>Tracking Progress</h3>
+              <p>Experience transparency in your fitness journey. Our platform provides real-time analytics and progress tracking. Visualize your achievements, monitor key metrics, and stay motivated as you witness the data-driven evidence of your hard work and dedication. Your success, quantified.</p>
+          </div>
+      </div>
+  </div>
+  <script>
+    // JavaScript to hide the loader video after 3 seconds
+    window.addEventListener('load', function() {
+        setTimeout(function() {
+            document.querySelector('.loader-section').style.display = 'none';
+        }, 3000); // 3000 milliseconds = 3 seconds
+    });
+</script>
+  </body>
+</html>
