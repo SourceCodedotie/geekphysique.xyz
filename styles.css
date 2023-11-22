@@ -3,6 +3,7 @@ font-family: 'Roboto', sans-serif;
 */
 
 /* Apply box-sizing to all elements for consistent sizing */
+*
 {
     box-sizing: border-box;
 }
@@ -104,9 +105,18 @@ ul :hover {
     /* Smooth transition effect */
     border-radius: 15px;
     /* Rounded corners on hover */
-    padding: 5px;
-    /* Padding change on hover */
+
 }
+
+
+
+
+
+
+
+
+
+
 
 /* Logo styles */
 .logo a {
