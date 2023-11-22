@@ -396,3 +396,36 @@ button.btn-primary:hover, button.btn-primary:focus {
   font-family: 'Montserrat', sans-serif;
 }
 /*End of the additional CSS for Artem Chaykovskyy*/
+
+/* Start of Additional CSS for Dan Moran*/
+
+/* Video - Index page banner video */
+.video-section {
+  width: 100%;
+  cursor: pointer; /* Add cursor style for better user interaction */
+}
+
+video {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Service List - Index Page */
+.service-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.service-image {
+  width: 150px;
+  height: 150px;
+  margin-right: 20px;
+}
+
+.service-content {
+  flex: 1;
+}
+/* End of Additional CSS for Dan Moran*/
