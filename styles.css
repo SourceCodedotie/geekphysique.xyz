@@ -1,38 +1,398 @@
-/* HOME PAGE */
+/*font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
 
-.topnav {
-    display:inline-flex;
-    align-items: right;
-    justify-content: left;
-    color: #fff; 
-    padding: 00px;
-    
-  }
+/* Apply box-sizing to all elements for consistent sizing */
+{
+    box-sizing: border-box;
+}
 
-  .logo img {
-    height: 100px; 
-    width: 500px; 
-  }
- 
-  
-  .topnav a{
-    float: right;
-    color: #252525;
+/* Footer styles */
+footer {
+    margin: 10px;
+    /* Margin around the footer */
+    padding: 0;
+    /* No padding inside the footer */
+    color: orange;
+    /* Text color */
+    background-color: #333;
+    /* Background color */
     text-align: center;
-    padding: 14px 16px;
+    /* Center-align text */
+    align-content: center;
+    /* Align content to the center */
+    text-align: center;
+    /* Center-align text again (redundant) */
+    border: 15px solid orange;
+    /* Green border around the footer */
+    border-radius: 20px;
+    /* Rounded corners */
+}
+
+p {
+    color: #fff;
+    /* Text color for paragraphs */
+}
+
+a {
+    color: black;
+    /* Text color for links */
+}
+
+body {
+    /* Background with a diagonal gradient from green to black */
+    background: linear-gradient(135deg, orange, blue);
+    font-family: 'Roboto', sans-serif;
+    /* Font family for the entire page */
+    color: #333;
+    /* Default text color */
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    /* Background color for the header */
+    color: #fff;
+    /* Text color in the header */
+    display: flex;
+    /* Use flex layout for header content */
+    justify-content: space-between;
+    /* Space evenly between elements horizontally */
+    align-items: center;
+    /* Center-align items vertically */
+    padding: 10px 20px;
+    /* Padding inside the header */
+    border: 15px solid orange;
+    /* Green border around the header */
+    margin: 20px;
+    /* Margin around the header */
+    border-radius: 20px;
+    /* Rounded corners */
+}
+
+nav ul {
+    list-style-type: none;
+    /* Remove list-style bullets */
+    margin: 0;
+    /* Remove default margin */
+    padding: 0;
+    /* Remove default padding */
+}
+
+nav ul li {
+    display: inline;
+    /* Display list items horizontally */
+    margin-right: 20px;
+    /* Space between list items */
+    font-family: 'Montserrat';
+    /* Font family for list items */
+}
+
+nav ul li a {
     text-decoration: none;
-    font-size: 17px;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bold; 
+    /* Remove underline from links */
+    color: orange;
+    /* Link text color */
+    font-weight: bold;
+    /* Bold font for links */
+}
+
+ul :hover {
+    background-color: white;
+    /* Background color change on hover */
+    transition: .5s ease;
+    /* Smooth transition effect */
+    border-radius: 15px;
+    /* Rounded corners on hover */
+    padding: 5px;
+    /* Padding change on hover */
+}
+
+/* Logo styles */
+.logo a {
+    display: inline-block;
+    /* Display the anchor element as a block */
+}
+
+.logo img {
+    width: 250px;
+    /* Set the width of the logo image */
+    height: auto;
+    /* Automatically adjust height to maintain aspect ratio */
+}
+
+h3 {
+    color: orange;
+    /* Text color for h3 elements */
+}
+
+.button {
+    color: white;
+    /* Text color for buttons */
+    background-color: orange;
+    /* Button background color */
+    padding: 10px;
+    /* Padding inside buttons */
+    margin: 10px;
+    /* Margin around buttons */
+    border-radius: 10px;
+    /* Rounded corners for buttons */
+}
+
+.button:hover {
+    background-color: white;
+    /* Button background color change on hover */
+    transition: .5s ease;
+    /* Smooth transition effect */
+    color: orange;
+    /* Text color change on hover */
+}
+
+.container:hover .middle {
+    opacity: 1;
+    /* Make the "middle" element visible on hover */
+}
+
+/* Home section styles */
+
+.welcome-image img {
+    float: right;
+    /* Float images to the right */
+    border-radius: 20px;
+    /* Rounded corners for images */
+    margin: 10px;
+    /* Margin around images */
+}
+
+
+.home {
+    background-color: #333;
+    /* Background color for the home section */
+    color: #fff;
+    /* Text color in the home section */
+    align-content: center;
+    /* Align content to the center (not needed) */
+    text-align: center;
+    /* Center-align text in the home section */
+    border: 15px solid orange;
+    /* Green border around the home section */
+    padding: 20px;
+    /* Padding inside the home section */
+    margin: 20px;
+    /* Margin around the home section */
+    border-radius: 40px;
+    /* Rounded corners */
+}
+
+#welcome {}
+
+#products,
+#contacts {
+    text-align: left;
+    /* Left-align text in the products and contacts sections */
+}
+
+/* Home table styles */
+table,
+th,
+td {
+    border: 1px solid black;
+    /* Border for tables, table headers, and table data */
+    border-radius: 10px;
+    /* Rounded corners for table elements */
+    border-color: orange;
+    /* Border color for tables */
+    padding: 5px;
+    /* Padding inside table cells */
+}
+
+th {
+    background-color: orange;
+    /* Background color for table headers */
+}
+
+h1 .home-page {
+    border: 5px;
+    /* Border around h1 elements (invalid property) */
+    padding: 10px;
+    /* Padding inside h1 elements */
+    margin: 10px;
+    /* Margin around h1 elements */
+    border: 10px;
+    /* Border around h1 elements (redundant) */
+}
+
+
+.text {
+    background-color: green;
+    /* Background color for text */
+    color: white;
+    /* Text color */
+    font-size: 16px;
+    /* Font size for text */
+    padding: 16px 32px;
+    /* Padding inside text */
+    border-radius: 20px;
+    /* Rounded corners for text */
+}
+
+/*Artem Chaykovskyy -  additional CSS*/
+
+.header {
+  background-color: #333;
+  /* Background color for the header */
+  color: #fff;
+  /* Center-align items vertically */
+  padding: 10px 20px;
+  /* Padding inside the header */
+  border: 15px solid orange;
+  /* Green border around the header */
+  margin-top:  20px;
+  margin-bottom: 20px;
+  /* Margin around the header */
+  border-radius: 20px;
+  /* Rounded corners */
+}
+
+#shapeContainer {
+    width: 50vw; /* 50% of the viewport width */
+    height: 50vh; /* 50% of the viewport height */
+    max-width: 400px; /* Max width */
+    max-height: 400px; /* Max height */
+    position: relative;
+    margin: 20px auto;
+    padding:10px auto; /* Rounded corners */
+
+  }
+  
+  #shape {
+    /* Absolute position inside the container */
+    position: absolute;
+    display: none;
   }
 
-  
-.topnav .logo {
-  display: flex;
-  align-items: center;
+  .col-md-3 {
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center;
+  }
+
+/* Styling the caption text under the pictures */
+figcaption {
+  font-size: 16px;
+  text-align: center;
+  margin-top: 16px;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  background-color: green;
+  /* Background color for text */
+  padding: 10px 32px;
+  /* Padding inside text */
+  border-radius: 15px;
+  /* Rounded corners for text */
 }
 
-.topnav .logo a {
-  max-height: 50px; 
-  display: inline-block;
+/* Styling the pictures on hoover. scaling, adding the smoothnes (animation) */
+#zoom:hover{
+  transform: scale(1.1);
+  transition: transform 0.3s;
 }
+/* Styling the pictures on hoover. scaling, adding the smoothnes (animation) */
+#zoom1:hover{
+  transform: scale(1.1);
+  transition: transform 0.3s;
+}
+/* Styling the pictures on hoover. scaling, adding the smoothnes (animation) */
+#zoom2:hover{
+  transform: scale(1.1);
+  transition: transform 0.3s;
+}
+/* Styling the pictures on hoover. scaling, adding the smoothnes (animation) */
+#zoom3:hover{
+  transform: scale(1.1);
+  transition: transform 0.3s;
+}
+/* Styling the pictures on hoover. scaling, adding the smoothnes (animation) */
+#zoom4:hover{
+  transform: scale(1.1);
+  transition: transform 0.3s;
+}
+/* Styling the pictures on hoover. scaling, adding the smoothnes (animation) */
+#zoom5:hover{
+  transform: scale(1.1);
+  transition: transform 0.3s;
+}
+/* Styling the pictures on hoover. scaling, adding the smoothnes (animation) */
+#zoom6:hover{
+  transform: scale(1.1);
+  transition: transform 0.3s;
+}
+/* Styling the pictures on hoover. scaling, adding the smoothnes (animation) */
+#zoom7:hover{
+  transform: scale(1.1);
+  transition: transform 0.3s;
+}
+/* Styling the pictures on hoover. scaling, adding the smoothnes (animation) */
+#zoom8:hover{
+  transform: scale(1.1);
+  transition: transform 0.3s;
+}
+/*Styling the images*/
+#zoom, #zoom1, #zoom2, #zoom3, #zoom4, #zoom5, #zoom6, #zoom7, #zoom8 {
+  margin-left: 20px;
+  border-radius: 15px;
+  border: 15px solid orange;
+}
+  
+/* Style all text type input fields, textarea and select elements */
+.form-control, .form-select, textarea,.form-check-input {
+  background-color: #333;
+  color: white;
+  border: 5px solid green;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Override the color for placeholders */
+.form-control::placeholder, textarea::placeholder {
+  color: white;
+}
+
+/* Style the button */
+button.btn-primary {
+  background-color: #333;
+  color: white;
+  border: 5px solid green;
+  border-radius: 10px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Change color to orange when radio buttons and checkboxes are checked */
+.form-check-input:checked {
+  background-color: orange;
+  border-color: green;
+}
+
+/* Change button color to orange on hover to indicate interactivity */
+button.btn-primary:hover, button.btn-primary:focus {
+  background-color: green;
+  border-color: green;
+}
+/* Maintain the black background color on focus */
+.form-control:focus, .form-select:focus, textarea:focus {
+  background-color: #333;
+  color: white;
+  border-color: green; /* You can change this if you want a different border color on focus */
+}
+/* Style the labels */
+.form-label {
+  color: white;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+}
+/*End of the additional CSS for Artem Chaykovskyy*/
