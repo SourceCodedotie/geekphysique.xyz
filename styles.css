@@ -212,14 +212,12 @@ th {
 }
 
 h1 .home-page {
-  border: 5px;
-  /* Border around h1 elements (invalid property) */
   padding: 10px;
   /* Padding inside h1 elements */
   margin: 10px;
   /* Margin around h1 elements */
   border: 10px;
-  /* Border around h1 elements (redundant) */
+  /* Border around h1 elements*/
 }
 
 
@@ -241,6 +239,7 @@ h1 .home-page {
   background-color: #333;
   border-radius: 20px;
   border: 15px solid orange;
+  margin: 10px;
 }
 
 .btn-primary {
