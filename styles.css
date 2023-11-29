@@ -2,6 +2,59 @@
 font-family: 'Roboto', sans-serif;
 */
 
+
+
+.testimonial-slider {
+  
+  width: 50%;
+  overflow: hidden;
+
+}
+
+.testimonials {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.testimonial {
+  flex: 0 0 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-right: 20px;
+}
+
+.testimonial h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.testimonial p {
+  color: #666;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.prev-btn,
+.next-btn {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+
+
+
 /* Apply box-sizing to all elements for consistent sizing */
 * {
   box-sizing: border-box;
@@ -46,6 +99,7 @@ body {
   /* Font family for the entire page */
   color: #333;
   /* Default text color */
+
 }
 
 /* Header styles */

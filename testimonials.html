@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials</title>
+
+    <!-- Link to Google Fonts for Roboto and Montserrat fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap Links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <!-- Link to external CSS File -->
+    <link rel="stylesheet" href="styles.css">
+
+
+</head>
+
+<body>
+    <!--Bootstrap grid added to ensure page is responsive-->
+    <div class="container">
+        <div class="header">
+            <!--header-->
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="logo">
+                        <!--Image Source: canva.com, Paid Professional Subscription -->
+                        <a href="Index.html"><img src="images/images/geek3.png" class="img-fluid" alt="GymImage1"></a>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <nav>
+                        <ul>
+                            <!-- Navigation links to Home, Programs, and Sign Up pages -->
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="programs.html">Programs</a></li>
+                            <li><a href="testimonials.html">Testimonials</a></li>
+                            <li><a href="signup.html">Sign Up</a></li>
+                            <li><a href="minigame.html">Play a Game</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <h3 class="home">Read about other peoples experience in Geek Physique!</h3>
+            </div>
+        </div>
+
+
+        <!--    add a carosel -->
+
+        <div class="testimonial-slider">
+            <div class="testimonials">
+                <div class="testimonial">
+                    <h2>Testimonial 1</h2>
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit."</p>
+                </div>
+
+                <div class="testimonial">
+                    <h2>Testimonial 2</h2>
+                    <p>"Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+                </div>
+
+                <div class="testimonial">
+                    <h2>Testimonial 3</h2>
+                    <p>"Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris."</p>
+                </div>
+
+            </div>
+
+
+            <div class="btn-container">
+                <button class="prev-btn" onclick="prevTestimonial()">Previous</button>
+                <button class="next-btn" onclick="nextTestimonial()">Next</button>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <div class="row">
+            <div class="col">
+                <footer>
+                    <p>&copy; 2023 Geek Physique Ltd</p>
+                </footer>
+            </div>
+
+        </div>
+    </div>
+    <!-- Link to external JS File -->
+    <script src="scripts/gallery_validations.js"></script>
+</body>
+
+</html>
