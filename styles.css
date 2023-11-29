@@ -294,6 +294,7 @@ h1 .home-page {
   border-radius: 20px;
   border: 15px solid orange;
   margin: 10px;
+  text-align: center;
 }
 
 .btn-primary {
@@ -304,6 +305,9 @@ h1 .home-page {
 .btn-primary:hover {
   color: blue;
   background-color: orange;
+}
+.card-img-top{
+  max-height: 200px;
 }
 
 
