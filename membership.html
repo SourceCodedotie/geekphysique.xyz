@@ -10,26 +10,39 @@
   <!-- Head /end-->
   
 <body>
-    <!-- IMAGE REFERENCE: All Images were created by me using Canva.com templates -->
-  
-    <!-- Topnav Logo for Geek Physique /start -->
-    <div class="container">
-      <div class="topnav">
-        <div class="logo">
-          <a href="./index.html">
-            <img src="./src/GP-logo.png" alt="geekphysique">
-          </a>
-        </div>
-      <!-- Topnav Logo for Geek Physique / end -->
-  
-  <!-- Main Menu /start -->
-      <a class="active" href="./index.html">Home</a> 
-      <a href="./about.html">About</a>
-      <a href="./classes.html">Classes</a>
-      <a href="./membership.html">Membership</a>
-      <a href="./staff.html">Staff</a>
-      <a href="./gallery.html">Gallery</a>
-      <a href="./minigame.html">Game</a>
-      <a href="./contact.html">Contact</a>
+   <form id="signupForm" action="mailto:daniel.moran89@gmail.com" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" required>
+
+        <label for="phone">Phone Number (10 digits):</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+
+        <label for="membership">Membership Type:</label>
+        <select id="membership" name="membership" required>
+            <option value="adult">Adult (35 Euro/month)</option>
+            <option value="student">Student (25 Euro/month)</option>
+            <option value="kids">Kids Fun Classes (18 Euro/month)</option>
+        </select>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        document.getElementById('signupForm').addEventListener('submit', function () {
+            // Show the Pay Now button after form submission
+            document.getElementById('payNowButton').style.display = 'block';
+        });
+    </script>
+
+    <!-- Pay Now button initially hidden -->
+    <button id="payNowButton" style="display: none;">
+        <a href="https://www.striple.com" target="_blank" style="text-decoration: none; color: white;">
+            Pay Now
+        </a>
+    </button>
+
 
  </body>
