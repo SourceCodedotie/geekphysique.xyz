@@ -58,10 +58,9 @@
                 <h3 class="home">Welcome To The Geek Family!</h3>
             </div>
         </div>
-        
 
         <!--Form, Bootstrap has been used-->
-
+        <form action="mailto:geekphysique@gmail.com" method="post" enctype="text/plain" class="row g-3">
             <!--First Name-->
             <div class="col-md-6">
                 <label for="inputFirstName" class="form-label">First Name</label>
@@ -95,8 +94,8 @@
                     <option value="kids">Kids Fun Classes (18 Euro/month)</option>
                 </select>
             </div>
-            
-                  
+
+
             <!--Comments Section-->
             <div class="col-mb-6">
                 <label for="Textarea" class="form-label">Special Requirements/Moblity Issues - Let Us Know!</label>
@@ -119,7 +118,7 @@
             </div>
             <!--Submit Button-->
             <div class="col-12">
-                <button type="submit" class="btn btn-primary">Pay & Join Now</button>
+                <button type="submit" class="btn btn-primary" onclick="showPayNowButton()">Pay & Join Now</button>
             </div>
         </form>
 
