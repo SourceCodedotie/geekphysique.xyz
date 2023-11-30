@@ -428,4 +428,16 @@ video {
 .service-content {
   flex: 1;
 }
+/* Audio Player on About page - It fits the player to the same width as the Navbar */
+.row {
+  display: flex;
+}
+
+.col-md-9 {
+  flex: 1;
+}
+
+audio {
+  width: 100%;
+}
 /* End of Additional CSS for Dan Moran*/
