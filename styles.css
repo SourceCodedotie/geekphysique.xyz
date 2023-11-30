@@ -444,29 +444,6 @@ audio {
 
 /* Sign Up Form/
 
-form {
-    max-width: 400px;
-    margin: 0 auto;
-}
 
-label {
-    display: block;
-    margin-bottom: 8px;
-}
-
-input, select {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 16px;
-}
-
-button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-}
 
 /* End of Additional CSS for Dan Moran*/
