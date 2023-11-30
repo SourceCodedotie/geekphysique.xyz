@@ -2,238 +2,309 @@
 font-family: 'Roboto', sans-serif;
 */
 
+.testimonial-slider {
+  width: 50%;
+  overflow: hidden;
+}
+
+.testimonials {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.testimonial {
+  flex: 0 0 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-right: 20px;
+}
+
+.testimonial h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.testimonial p {
+  color: #666;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.prev-btn,
+.next-btn {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+
+
+
 /* Apply box-sizing to all elements for consistent sizing */
-{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
 /* Footer styles */
 footer {
-    margin: 10px;
-    /* Margin around the footer */
-    padding: 0;
-    /* No padding inside the footer */
-    color: orange;
-    /* Text color */
-    background-color: #333;
-    /* Background color */
-    text-align: center;
-    /* Center-align text */
-    align-content: center;
-    /* Align content to the center */
-    text-align: center;
-    /* Center-align text again (redundant) */
-    border: 15px solid orange;
-    /* Green border around the footer */
-    border-radius: 20px;
-    /* Rounded corners */
+  margin: 10px;
+  /* Margin around the footer */
+  padding: 0;
+  /* No padding inside the footer */
+  color: orange;
+  /* Text color */
+  background-color: #333;
+  /* Background color */
+  text-align: center;
+  /* Center-align text */
+  align-content: center;
+  /* Align content to the center */
+  text-align: center;
+  /* Center-align text again (redundant) */
+  border: 15px solid orange;
+  /* Green border around the footer */
+  border-radius: 20px;
+  /* Rounded corners */
 }
 
 p {
-    color: #fff;
-    /* Text color for paragraphs */
+  color: #fff;
+  /* Text color for paragraphs */
 }
 
 a {
-    color: black;
-    /* Text color for links */
+  color: black;
+  /* Text color for links */
 }
 
 body {
-    /* Background with a diagonal gradient from green to black */
-    background: linear-gradient(135deg, orange, blue);
-    font-family: 'Roboto', sans-serif;
-    /* Font family for the entire page */
-    color: #333;
-    /* Default text color */
+  /* Background with a diagonal gradient from green to black */
+  background: linear-gradient(135deg, orange, blue);
+  font-family: 'Roboto', sans-serif;
+  /* Font family for the entire page */
+  color: #333;
+  /* Default text color */
+
 }
 
 /* Header styles */
 header {
-    background-color: #333;
-    /* Background color for the header */
-    color: #fff;
-    /* Text color in the header */
-    display: flex;
-    /* Use flex layout for header content */
-    justify-content: space-between;
-    /* Space evenly between elements horizontally */
-    align-items: center;
-    /* Center-align items vertically */
-    padding: 10px 20px;
-    /* Padding inside the header */
-    border: 15px solid orange;
-    /* Green border around the header */
-    margin: 20px;
-    /* Margin around the header */
-    border-radius: 20px;
-    /* Rounded corners */
+  background-color: #333;
+  /* Background color for the header */
+  color: #fff;
+  /* Text color in the header */
+  display: flex;
+  /* Use flex layout for header content */
+  justify-content: space-between;
+  /* Space evenly between elements horizontally */
+  align-items: center;
+  /* Center-align items vertically */
+  padding: 10px 20px;
+  /* Padding inside the header */
+  border: 15px solid orange;
+  /* Green border around the header */
+  margin: 20px;
+  /* Margin around the header */
+  border-radius: 20px;
+  /* Rounded corners */
 }
 
 nav ul {
-    list-style-type: none;
-    /* Remove list-style bullets */
-    margin: 0;
-    /* Remove default margin */
-    padding: 0;
-    /* Remove default padding */
+  list-style-type: none;
+  /* Remove list-style bullets */
+  margin: 0;
+  /* Remove default margin */
+  padding: 0;
+  /* Remove default padding */
 }
 
 nav ul li {
-    display: inline;
-    /* Display list items horizontally */
-    margin-right: 20px;
-    /* Space between list items */
-    font-family: 'Montserrat';
-    /* Font family for list items */
+  display: inline;
+  /* Display list items horizontally */
+  margin-right: 20px;
+  /* Space between list items */
+  font-family: 'Montserrat';
+  /* Font family for list items */
 }
 
 nav ul li a {
-    text-decoration: none;
-    /* Remove underline from links */
-    color: orange;
-    /* Link text color */
-    font-weight: bold;
-    /* Bold font for links */
+  text-decoration: none;
+  /* Remove underline from links */
+  color: orange;
+  /* Link text color */
+  font-weight: bold;
+  /* Bold font for links */
 }
 
 ul :hover {
-    background-color: white;
-    /* Background color change on hover */
-    transition: .5s ease;
-    /* Smooth transition effect */
-    border-radius: 15px;
-    /* Rounded corners on hover */
-    padding: 5px;
-    /* Padding change on hover */
+  background-color: white;
+  /* Background color change on hover */
+  transition: .5s ease;
+  /* Smooth transition effect */
+  border-radius: 15px;
+  /* Rounded corners on hover */
+
 }
+
 
 /* Logo styles */
 .logo a {
-    display: inline-block;
-    /* Display the anchor element as a block */
+  display: inline-block;
+  /* Display the anchor element as a block */
 }
 
 .logo img {
-    width: 250px;
-    /* Set the width of the logo image */
-    height: auto;
-    /* Automatically adjust height to maintain aspect ratio */
+  width: 250px;
+  /* Set the width of the logo image */
+  height: auto;
+  /* Automatically adjust height to maintain aspect ratio */
 }
 
 h3 {
-    color: orange;
-    /* Text color for h3 elements */
+  color: orange;
+  /* Text color for h3 elements */
 }
 
 .button {
-    color: white;
-    /* Text color for buttons */
-    background-color: orange;
-    /* Button background color */
-    padding: 10px;
-    /* Padding inside buttons */
-    margin: 10px;
-    /* Margin around buttons */
-    border-radius: 10px;
-    /* Rounded corners for buttons */
+  color: white;
+  /* Text color for buttons */
+  background-color: orange;
+  /* Button background color */
+  padding: 10px;
+  /* Padding inside buttons */
+  margin: 10px;
+  /* Margin around buttons */
+  border-radius: 10px;
+  /* Rounded corners for buttons */
 }
 
 .button:hover {
-    background-color: white;
-    /* Button background color change on hover */
-    transition: .5s ease;
-    /* Smooth transition effect */
-    color: orange;
-    /* Text color change on hover */
+  background-color: white;
+  /* Button background color change on hover */
+  transition: .5s ease;
+  /* Smooth transition effect */
+  color: orange;
+  /* Text color change on hover */
 }
 
 .container:hover .middle {
-    opacity: 1;
-    /* Make the "middle" element visible on hover */
+  opacity: 1;
+  /* Make the "middle" element visible on hover */
 }
 
 /* Home section styles */
 
 .welcome-image img {
-    float: right;
-    /* Float images to the right */
-    border-radius: 20px;
-    /* Rounded corners for images */
-    margin: 10px;
-    /* Margin around images */
+  float: right;
+  /* Float images to the right */
+  border-radius: 20px;
+  /* Rounded corners for images */
+  margin: 10px;
+  /* Margin around images */
 }
 
 
 .home {
-    background-color: #333;
-    /* Background color for the home section */
-    color: #fff;
-    /* Text color in the home section */
-    align-content: center;
-    /* Align content to the center (not needed) */
-    text-align: center;
-    /* Center-align text in the home section */
-    border: 15px solid orange;
-    /* Green border around the home section */
-    padding: 20px;
-    /* Padding inside the home section */
-    margin: 20px;
-    /* Margin around the home section */
-    border-radius: 40px;
-    /* Rounded corners */
+  background-color: #333;
+  /* Background color for the home section */
+  color: #fff;
+  /* Text color in the home section */
+  align-content: center;
+  /* Align content to the center (not needed) */
+  text-align: center;
+  /* Center-align text in the home section */
+  border: 15px solid orange;
+  /* Green border around the home section */
+  padding: 20px;
+  /* Padding inside the home section */
+  margin: 20px;
+  /* Margin around the home section */
+  border-radius: 40px;
+  /* Rounded corners */
 }
 
 #welcome {}
 
 #products,
 #contacts {
-    text-align: left;
-    /* Left-align text in the products and contacts sections */
+  text-align: left;
+  /* Left-align text in the products and contacts sections */
 }
 
 /* Home table styles */
 table,
 th,
 td {
-    border: 1px solid black;
-    /* Border for tables, table headers, and table data */
-    border-radius: 10px;
-    /* Rounded corners for table elements */
-    border-color: orange;
-    /* Border color for tables */
-    padding: 5px;
-    /* Padding inside table cells */
+  border: 1px solid black;
+  /* Border for tables, table headers, and table data */
+  border-radius: 10px;
+  /* Rounded corners for table elements */
+  border-color: orange;
+  /* Border color for tables */
+  padding: 5px;
+  /* Padding inside table cells */
 }
 
 th {
-    background-color: orange;
-    /* Background color for table headers */
+  background-color: orange;
+  /* Background color for table headers */
 }
 
 h1 .home-page {
-    border: 5px;
-    /* Border around h1 elements (invalid property) */
-    padding: 10px;
-    /* Padding inside h1 elements */
-    margin: 10px;
-    /* Margin around h1 elements */
-    border: 10px;
-    /* Border around h1 elements (redundant) */
+  padding: 10px;
+  /* Padding inside h1 elements */
+  margin: 10px;
+  /* Margin around h1 elements */
+  border: 10px;
+  /* Border around h1 elements*/
 }
 
 
 .text {
-    background-color: green;
-    /* Background color for text */
-    color: white;
-    /* Text color */
-    font-size: 16px;
-    /* Font size for text */
-    padding: 16px 32px;
-    /* Padding inside text */
-    border-radius: 20px;
-    /* Rounded corners for text */
+  background-color: green;
+  /* Background color for text */
+  color: white;
+  /* Text color */
+  font-size: 16px;
+  /* Font size for text */
+  padding: 16px 32px;
+  /* Padding inside text */
+  border-radius: 20px;
+  /* Rounded corners for text */
+}
+
+.card {
+  color: orange;
+  background-color: #333;
+  border-radius: 20px;
+  border: 15px solid orange;
+  margin: 10px;
+  text-align: center;
+}
+
+.btn-primary {
+  color: orange;
+  background-color: blue;
+}
+
+.btn-primary:hover {
+  color: blue;
+  background-color: orange;
+}
+
+.card-img-top {
+  max-height: 200px;
 }
 
 /*Artem Chaykovskyy -  additional CSS*/
