@@ -5,9 +5,10 @@ font-family: 'Roboto', sans-serif;
 
 
 .testimonial-slider {
-  
   width: 50%;
   overflow: hidden;
+
+
 
 }
 
@@ -306,7 +307,8 @@ h1 .home-page {
   color: blue;
   background-color: orange;
 }
-.card-img-top{
+
+.card-img-top {
   max-height: 200px;
 }
 
