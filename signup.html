@@ -20,7 +20,6 @@
 
     <!-- Link to external CSS File -->
     <link rel="stylesheet" href="styles.css">
-
 </head>
 
 <body>
@@ -60,7 +59,8 @@
         </div>
 
         <!--Form, Bootstrap has been used-->
-        <form action="mailto:geekphysique@gmail.com" method="post" enctype="text/plain" class="row g-3">
+
+        <form action="payment.html" method="post" id="signupForm" class="row g-3">
             <!--First Name-->
             <div class="col-md-6">
                 <label for="inputFirstName" class="form-label">First Name</label>
@@ -95,10 +95,9 @@
                 </select>
             </div>
 
-
             <!--Comments Section-->
             <div class="col-mb-6">
-                <label for="Textarea" class="form-label">Special Requirements/Moblity Issues - Let Us Know!</label>
+                <label for="Textarea" class="form-label">Special Requirements/Mobility Issues - Let Us Know!</label>
                 <textarea class="form-control" id="Textarea" rows="4" required
                     placeholder="Type your question here..."></textarea>
             </div>
@@ -118,7 +117,7 @@
             </div>
             <!--Submit Button-->
             <div class="col-12">
-                <button type="submit" class="btn btn-primary" onclick="showPayNowButton()">Pay & Join Now</button>
+                <button type="submit" class="btn btn-primary">Pay & Join Now</button>
             </div>
         </form>
 
@@ -138,7 +137,8 @@
             </div>
         </div>
     </div>
-    <!-- Link to external JS File -->
+
+    <!-- Link to external JS File for additional functionality -->
     <script src="scripts/form_validations.js"></script>
 </body>
 
