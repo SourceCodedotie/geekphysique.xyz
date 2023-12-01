@@ -1,4 +1,18 @@
-/* Add this to your existing CSS to style the carousel */
+* Custom CSS for Navbar */
+@media (max-width: 768px) {
+  .navbar-toggler {
+    display: block;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navbar-nav .nav-item {
+    margin: 10px 0;
+  }
+}
 .carousel-item {
   text-align: center;
 }
