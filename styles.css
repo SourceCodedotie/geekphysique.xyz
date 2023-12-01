@@ -138,9 +138,9 @@ ul :hover {
   /* Background color change on hover */
   transition: .5s ease;
   /* Smooth transition effect */
-  border-radius: 15px;
+  border-radius: 10px;
   /* Rounded corners on hover */
-
+  padding: 3px;
 }
 
 
