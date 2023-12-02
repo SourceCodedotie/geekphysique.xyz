@@ -1,4 +1,18 @@
-/* Add this to your existing CSS to style the carousel */
+/* Custom CSS for Navbar */
+@media (max-width: 768px) {
+  .navbar-toggler {
+    display: block;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navbar-nav .nav-item {
+    margin: 10px 0;
+  }
+}
 .carousel-item {
   text-align: center;
 }
@@ -124,8 +138,9 @@ ul :hover {
   /* Background color change on hover */
   transition: .5s ease;
   /* Smooth transition effect */
-  border-radius: 15px;
+  border-radius: 10px;
   /* Rounded corners on hover */
+  padding: 3px;
 
 }
 
