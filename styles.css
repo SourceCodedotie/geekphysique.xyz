@@ -277,7 +277,14 @@ h1 .home-page {
   border: 15px solid orange;
   margin: 10px;
   text-align: center;
+  transition: .5s ease;
 }
+.card:hover {
+  background-color: orange;
+  cursor: pointer;
+  transition: .5s ease;
+}
+
 
 .btn-primary {
   color: orange;
