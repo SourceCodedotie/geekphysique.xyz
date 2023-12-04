@@ -161,9 +161,6 @@ h3 {
   color: orange;
   /* Text color for h3 elements */
 }
-.card-title {
-  color: orange;
-}
 .card-title:hover {
   color: blue;
 }
