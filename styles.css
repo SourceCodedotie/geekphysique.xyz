@@ -286,6 +286,7 @@ h1 .home-page {
   background-color: orange;
   cursor: pointer;
   transition: .5s ease;
+  color: blue;
 }
 
 
