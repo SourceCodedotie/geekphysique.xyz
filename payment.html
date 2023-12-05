@@ -9,7 +9,23 @@
     <div class="container">
         <h2>Enter Card Details</h2>
         <form action="thankyou.html" method="post" id="paymentForm" class="row g-3" onsubmit="showThankYouPopup()">
-            <!-- Form fields go here -->
+            <!-- Card Number -->
+            <div class="col-md-12">
+                <label for="cardNumber" class="form-label">Card Number</label>
+                <input type="text" class="form-control" id="cardNumber" name="cardNumber" pattern="\d*" maxlength="16" placeholder="Enter card number" required>
+            </div>
+
+            <!-- Expiry Date -->
+            <div class="col-md-6">
+                <label for="expiryDate" class="form-label">Expiry Date</label>
+                <input type="text" class="form-control" id="expiryDate" name="expiryDate" pattern="\d*" maxlength="4" placeholder="MMYY" required>
+            </div>
+
+            <!-- CCV Number -->
+            <div class="col-md-6">
+                <label for="ccvNumber" class="form-label">CCV Number</label>
+                <input type="text" class="form-control" id="ccvNumber" name="ccvNumber" pattern="\d*" maxlength="3" placeholder="Enter CCV number" required>
+            </div>
 
             <!-- Submit Button -->
             <div class="col-12">
